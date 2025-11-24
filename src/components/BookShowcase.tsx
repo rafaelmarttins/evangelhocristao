@@ -27,13 +27,13 @@ const BookShowcase = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-12 md:py-20 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+        <div className="text-center mb-8 md:mb-12 space-y-3 md:space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground px-2">
             Conheça Nossos Livros de Colorir
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg md:text-xl text-muted-foreground px-4">
             Livros únicos para momentos de fé e relaxamento
           </p>
         </div>
@@ -64,12 +64,12 @@ const BookShowcase = () => {
           <CarouselNext className="hidden md:flex" />
         </Carousel>
 
-        <div className="text-center">
+        <div className="text-center px-4">
           <Button 
             onClick={scrollToOffers}
             variant="success" 
-            size="xl"
-            className="px-12"
+            size="lg"
+            className="w-full sm:w-auto sm:px-12"
           >
             QUERO VER AS OFERTAS
           </Button>
