@@ -1,17 +1,21 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import testimonial1 from "@/assets/testimonial-1.jpg";
+import testimonial2 from "@/assets/testimonial-2.jpg";
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Ana Paula Silva",
-      role: "Professora de Escola Dominical",
-      text: "Os livros são maravilhosos! As crianças adoram e os pais agradecem. Material de excelente qualidade e com mensagens edificantes."
+      name: "Cliente Satisfeita",
+      role: "Mãe e Educadora",
+      text: "Muito muito obrigada ❤️❤️❤️ Os livros são maravilhosos! As crianças adoram e estão aprendendo muito sobre a Palavra.",
+      image: testimonial1
     },
     {
-      name: "Pastor João Santos",
-      role: "Líder de Célula",
-      text: "Utilizamos os livros nas nossas células infantis e o engajamento das crianças aumentou muito. Recomendo para todas as igrejas!"
+      name: "Ludyany Guimarães",
+      role: "Cliente Verificada",
+      text: "Recebido, obrigada <3. Fiz o pagamento e recebi os arquivos rapidinho. Material de excelente qualidade!",
+      image: testimonial2
     }
   ];
 
@@ -36,6 +40,17 @@ const Testimonials = () => {
           {testimonials.map((testimonial, i) => (
             <Card key={i} className="border-2 shadow-lg">
               <CardContent className="p-8 space-y-4">
+                <div className="flex items-center gap-4 mb-4">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover border-2 border-primary"
+                  />
+                  <div className="flex-1">
+                    <p className="font-bold text-foreground">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  </div>
+                </div>
                 <div className="flex gap-1 mb-2">
                   {[...Array(5)].map((_, j) => (
                     <Star key={j} className="w-5 h-5 fill-warning text-warning" />
@@ -44,10 +59,6 @@ const Testimonials = () => {
                 <p className="text-foreground italic text-lg leading-relaxed">
                   "{testimonial.text}"
                 </p>
-                <div className="pt-4 border-t">
-                  <p className="font-bold text-foreground">{testimonial.name}</p>
-                  <p className="text-muted-foreground">{testimonial.role}</p>
-                </div>
               </CardContent>
             </Card>
           ))}
