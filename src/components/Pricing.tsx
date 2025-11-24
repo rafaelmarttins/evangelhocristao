@@ -51,7 +51,7 @@ const Pricing = () => {
               <Button 
                 variant="success" 
                 size="xl" 
-                className="w-full"
+                className="w-full animate-pulse hover:animate-none"
               >
                 QUERO O PACOTE BÁSICO
               </Button>
@@ -99,7 +99,7 @@ const Pricing = () => {
               <Button 
                 variant="warning" 
                 size="xl" 
-                className="w-full"
+                className="w-full animate-pulse hover:animate-none"
               >
                 QUERO O PACOTE PREMIUM
               </Button>
