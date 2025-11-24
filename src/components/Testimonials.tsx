@@ -12,19 +12,22 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-background to-accent/20">
+    <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-background to-accent/20">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-8 md:mb-12 space-y-3 md:space-y-4 px-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
             O que nossos clientes dizem
           </h2>
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex items-center justify-center gap-1 md:gap-2">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-8 h-8 fill-warning text-warning" />
+              <Star key={i} className="w-6 h-6 md:w-8 md:h-8 fill-warning text-warning" />
             ))}
           </div>
-          <p className="text-2xl font-semibold text-foreground">
+          <p className="text-xl md:text-2xl font-semibold text-foreground">
             4.9/5 - 347 avaliações
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground">
+            Milhares de famílias já transformaram seus momentos com nossos livros
           </p>
         </div>
 
