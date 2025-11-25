@@ -2,10 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Lock, RefreshCw, Download, Shield, CreditCard } from "lucide-react";
 import logoColorido from "@/assets/logo-colorido.png";
 import produtosMockup from "@/assets/produtos-mockup.webp";
-import exemplo1 from "@/assets/exemplo-1.webp";
-import exemplo2 from "@/assets/exemplo-2.webp";
-import exemplo3 from "@/assets/exemplo-3.webp";
-import exemplo4 from "@/assets/exemplo-4.webp";
 
 const Hero = () => {
   const scrollToOffers = () => {
@@ -52,27 +48,6 @@ const Hero = () => {
                   <span className="text-xs md:text-sm text-muted-foreground">{item.text}</span>
                 </div>
               ))}
-            </div>
-
-            {/* Exemplos de Desenhos */}
-            <div className="pt-6 md:pt-8">
-              <h3 className="text-lg md:text-xl font-bold text-center mb-4 md:mb-6 text-foreground">
-                Exemplos de desenhos que você irá encontrar em nossos livros:
-              </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
-                {[exemplo1, exemplo2, exemplo3, exemplo4].map((exemplo, i) => (
-                  <div 
-                    key={i} 
-                    className="bg-white rounded-lg p-2 shadow-md hover:shadow-lg transition-all duration-300 border-2 border-border"
-                  >
-                    <img 
-                      src={exemplo} 
-                      alt={`Exemplo de desenho ${i + 1}`} 
-                      className="w-full h-auto rounded"
-                    />
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
 
