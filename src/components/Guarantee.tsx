@@ -1,38 +1,32 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Lock } from "lucide-react";
+import guaranteeSeal from "@/assets/guarantee-30-days.png";
 
 const Guarantee = () => {
   return (
-    <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-success/5 to-background">
-      <div className="container mx-auto max-w-4xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          <Card className="border-2 border-success shadow-xl">
-            <CardContent className="p-6 md:p-8 text-center space-y-3 md:space-y-4">
-              <div className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-success/10 flex items-center justify-center">
-                <Shield className="w-8 h-8 md:w-10 md:h-10 text-success" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold text-foreground">
-                Garantia de 7 dias
-              </h3>
-              <p className="text-muted-foreground text-base md:text-lg">
-                Se não ficar satisfeito, devolvemos seu dinheiro sem perguntas
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-2 border-primary shadow-xl">
-            <CardContent className="p-6 md:p-8 text-center space-y-3 md:space-y-4">
-              <div className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
-                <Lock className="w-8 h-8 md:w-10 md:h-10 text-primary" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold text-foreground">
-                🔒 Pagamento Seguro
-              </h3>
-              <p className="text-muted-foreground text-base md:text-lg">
-                Compra 100% segura e protegida - SSL Protegido
-              </p>
-            </CardContent>
-          </Card>
+    <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-muted/30 to-background">
+      <div className="container mx-auto max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="space-y-4 md:space-y-6 text-center lg:text-left">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+              Garantia incondicional de 30 dias!
+            </h2>
+            <p className="text-base md:text-lg text-muted-foreground">
+              Nós acreditamos tanto na qualidade do <span className="font-semibold text-foreground">Evangelho Colorido</span> que você terá <span className="font-semibold text-foreground">30 dias completos para testar sem riscos</span>.
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground">
+              Se por qualquer motivo você não ficar satisfeito com seu material, devolvemos <span className="font-semibold text-foreground">100% do seu investimento</span>, sem perguntas ou burocracias.
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground flex items-start justify-center lg:justify-start gap-2">
+              <span className="text-xl">💡</span>
+              <span>É a nossa forma de mostrar que sua confiança e tranquilidade estão em primeiro lugar.</span>
+            </p>
+          </div>
+          <div className="flex justify-center lg:justify-end">
+            <img 
+              src={guaranteeSeal} 
+              alt="Selo de Garantia de 30 Dias" 
+              className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>
