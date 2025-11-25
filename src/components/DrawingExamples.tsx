@@ -10,6 +10,11 @@ import exemplo1 from "@/assets/exemplo-1.webp";
 import exemplo2 from "@/assets/exemplo-2.webp";
 import exemplo3 from "@/assets/exemplo-3.webp";
 import exemplo4 from "@/assets/exemplo-4.webp";
+import exemplo5 from "@/assets/exemplo-5.webp";
+import exemplo6 from "@/assets/exemplo-6.webp";
+import exemplo7 from "@/assets/exemplo-7.webp";
+import exemplo8 from "@/assets/exemplo-8.webp";
+import exemplo9 from "@/assets/exemplo-9.webp";
 import Autoplay from "embla-carousel-autoplay";
 
 const DrawingExamples = () => {
@@ -17,7 +22,12 @@ const DrawingExamples = () => {
     { image: exemplo1, alt: "Família orando com a Bíblia" },
     { image: exemplo2, alt: "Crianças compartilhando pão" },
     { image: exemplo3, alt: "José e Maria com Jesus bebê" },
-    { image: exemplo4, alt: "Maria com bebê Jesus" }
+    { image: exemplo4, alt: "Maria com bebê Jesus" },
+    { image: exemplo5, alt: "Anjo anunciando aos pastores" },
+    { image: exemplo6, alt: "José e Maria com Jesus na manjedoura" },
+    { image: exemplo7, alt: "Camelo e ovelha sob estrela de Belém" },
+    { image: exemplo8, alt: "Moisés com as tábuas da lei" },
+    { image: exemplo9, alt: "Família acampando nas tendas" }
   ];
 
   return (
