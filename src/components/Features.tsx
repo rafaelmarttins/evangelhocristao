@@ -1,61 +1,76 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Users, Church, Heart, BookOpen } from "lucide-react";
+import { Heart, Brain, Clock, Palette, Zap, Lock, Phone } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
-      icon: Users,
-      title: "Células e Grupos",
-      description: "Atividades interativas para engajar crianças durante reuniões",
-      bgColor: "bg-blue-600",
-      textColor: "text-white"
-    },
-    {
-      icon: Church,
-      title: "Escola Dominical",
-      description: "Material complementar para aulas mais dinâmicas e envolventes",
-      bgColor: "bg-purple-600",
-      textColor: "text-white"
-    },
-    {
       icon: Heart,
-      title: "Devocional Familiar",
-      description: "Momentos especiais de conexão com Deus em família",
-      bgColor: "bg-teal-600",
-      textColor: "text-white"
+      title: "Valores Cristãos Sólidos",
+      description: "ensino bíblico seguro e divertido",
+      color: "text-red-500"
     },
     {
-      icon: BookOpen,
-      title: "Uso Pedagógico",
-      description: "Ferramenta educativa que desenvolve coordenação e criatividade",
-      bgColor: "bg-orange-600",
-      textColor: "text-white"
+      icon: Brain,
+      title: "Desenvolvimento Completo",
+      description: "habilidades cognitivas, motoras e criativas",
+      color: "text-pink-500"
+    },
+    {
+      icon: Clock,
+      title: "Tempo de Qualidade",
+      description: "atividades que aproximam crianças e educadores",
+      color: "text-purple-500"
+    },
+    {
+      icon: Palette,
+      title: "Qualidade Premium",
+      description: "ilustrações detalhadas e prontas para imprimir",
+      color: "text-orange-500"
+    },
+    {
+      icon: Zap,
+      title: "Acesso Vitalício & Entrega Imediata",
+      description: "material sempre disponível",
+      color: "text-yellow-500"
+    },
+    {
+      icon: Lock,
+      title: "Garantia de 30 dias",
+      description: "total segurança na compra",
+      color: "text-green-500"
+    },
+    {
+      icon: Phone,
+      title: "Suporte via WhatsApp",
+      description: "ajuda completa para download e utilização",
+      color: "text-blue-500"
     }
   ];
 
   return (
-    <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-accent/30 to-background">
+    <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-accent/10 to-background">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 md:mb-16 text-foreground">
-          Por que escolher nossos livros?
+          Benefícios do Evangelho Colorido
         </h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="space-y-4 md:space-y-6 max-w-4xl mx-auto">
           {features.map((feature, i) => {
             const Icon = feature.icon;
             return (
-              <Card 
+              <div 
                 key={i} 
-                className="border-2 hover:shadow-xl transition-all duration-300 hover:scale-105 bg-card"
+                className="flex items-start gap-3 md:gap-4 p-4 md:p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300"
               >
-                <CardContent className="p-4 md:p-6 space-y-3 md:space-y-4 text-center">
-                  <div className={`w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full ${feature.bgColor} flex items-center justify-center shadow-lg`}>
-                    <Icon className={`w-8 h-8 md:w-10 md:h-10 ${feature.textColor}`} />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold text-foreground">{feature.title}</h3>
-                  <p className="text-sm md:text-base text-muted-foreground">{feature.description}</p>
-                </CardContent>
-              </Card>
+                <Icon className={`w-6 h-6 md:w-7 md:h-7 ${feature.color} flex-shrink-0 mt-1`} />
+                <div>
+                  <h3 className="text-base md:text-lg font-bold text-foreground mb-1">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-muted-foreground">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
             );
           })}
         </div>

@@ -9,7 +9,7 @@ const Pricing = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-8 md:mb-12 space-y-3 md:space-y-4">
           <Badge className="text-xs sm:text-sm md:text-base px-4 md:px-6 py-1.5 md:py-2 bg-destructive text-destructive-foreground font-bold">
-            OFERTA LIMITADA - Apenas no dia 24/11/25
+            OFERTA LIMITADA - Apenas até dia 25/12/2025
           </Badge>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground px-2">
             Escolha Sua Oferta Especial
