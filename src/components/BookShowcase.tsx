@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import bookJonas from "@/assets/book-jonas.png";
 import bookDavi from "@/assets/book-davi.png";
 import bookArca from "@/assets/book-arca.png";
@@ -40,6 +41,11 @@ const BookShowcase = () => {
 
         <Carousel 
           opts={{ align: "start", loop: true }}
+          plugins={[
+            Autoplay({
+              delay: 3000,
+            }),
+          ]}
           className="w-full max-w-5xl mx-auto mb-10"
         >
           <CarouselContent>
