@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle2 } from "lucide-react";
-import heroBookCover from "@/assets/hero-book-cover.png";
+import { Lock, RefreshCw, Download, Shield, CreditCard } from "lucide-react";
+import logoColorido from "@/assets/logo-colorido.png";
+import produtosMockup from "@/assets/produtos-mockup.webp";
 
 const Hero = () => {
   const scrollToOffers = () => {
@@ -9,47 +10,52 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary-glow to-primary-dark py-12 md:py-20 px-4">
+    <section className="relative overflow-hidden bg-background py-8 md:py-16 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="text-white space-y-4 md:space-y-6 z-10">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-              35 Livros de Colorir Cristãos
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl font-medium text-white/90">
-              Transforme momentos especiais com sua família, célula e escola dominical
-            </p>
+          <div className="space-y-4 md:space-y-6 z-10">
+            <img 
+              src={logoColorido} 
+              alt="Evangelho Colorido" 
+              className="w-64 md:w-80 lg:w-96 mb-4 md:mb-6"
+            />
             
-            <div className="space-y-2 md:space-y-3 py-3 md:py-4">
-              {[
-                { icon: "🙏", text: "Células e Grupos" },
-                { icon: "⛪", text: "Escola Dominical" },
-                { icon: "❤️", text: "Devocional Familiar" },
-                { icon: "📚", text: "Uso Pedagógico" }
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-2 md:gap-3">
-                  <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-success flex-shrink-0" />
-                  <span className="text-base md:text-lg font-medium">{item.icon} {item.text}</span>
-                </div>
-              ))}
-            </div>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
+              Transforme o estudo da Bíblia em momentos inesquecíveis de alegria e cor.
+            </h1>
+            
+            <p className="text-base md:text-lg text-muted-foreground">
+              Com o kit de atividades para impressão Evangelho Colorido, suas crianças aprendem valores cristãos enquanto se divertem! E você ganha mais tempo em família.
+            </p>
 
             <Button 
               onClick={scrollToOffers}
-              variant="hero" 
-              size="lg"
-              className="w-full sm:w-auto text-sm md:text-base"
+              className="w-full sm:w-auto text-base md:text-lg font-bold bg-success hover:bg-success/90 text-white py-6 md:py-7 px-8 md:px-12 rounded-lg"
             >
-              QUERO VER AS OFERTAS
+              QUERO MEU KIT AGORA
             </Button>
+            
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 pt-4">
+              {[
+                { icon: CreditCard, text: "Pagamento único" },
+                { icon: RefreshCw, text: "Atualizações mensais incluídas" },
+                { icon: Download, text: "Acesso imediato" },
+                { icon: Shield, text: "Garantia de 30 dias" },
+                { icon: Lock, text: "Compra 100% Segura" }
+              ].map((item, i) => (
+                <div key={i} className="flex flex-col items-center text-center gap-1 md:gap-2">
+                  <item.icon className="w-5 h-5 md:w-6 md:h-6 text-foreground" />
+                  <span className="text-xs md:text-sm text-muted-foreground">{item.text}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-warning/20 to-orange/20 rounded-3xl blur-3xl"></div>
             <img 
-              src={heroBookCover} 
-              alt="35 Livros de Colorir Cristãos" 
-              className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto transform hover:scale-105 transition-transform duration-300"
+              src={produtosMockup} 
+              alt="Kit Evangelho Colorido" 
+              className="w-full max-w-lg mx-auto transform hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
