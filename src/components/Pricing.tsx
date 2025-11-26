@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check } from "lucide-react";
+import { Check, Gift } from "lucide-react";
 
 const Pricing = () => {
   return (
@@ -87,13 +87,13 @@ const Pricing = () => {
                   { text: "BÔNUS 4: Desafio Bíblico De 7 Dias", value: "R$ 19,90" },
                   { text: "BÔNUS 5: +100 Adesivos Cristãos", value: "R$ 8,90" }
                 ].map((bonus, i) => (
-                  <div key={i} className="flex items-start gap-2">
-                    <Check className="w-4 h-4 md:w-5 md:h-5 text-success flex-shrink-0 mt-0.5" />
+                  <div key={i} className="flex items-start gap-3 bg-orange/10 p-3 rounded-lg">
+                    <Gift className="w-5 h-5 md:w-6 md:h-6 text-orange flex-shrink-0 mt-0.5" />
                     <div className="flex-1">
                       <p className="text-foreground text-xs md:text-sm">
-                        <strong>{bonus.text}</strong>{" "}
-                        <span className="text-muted-foreground line-through text-xs">{bonus.value}</span>
+                        <strong>{bonus.text}</strong>
                       </p>
+                      <p className="text-destructive line-through text-xs mt-1">{bonus.value}</p>
                     </div>
                   </div>
                 ))}
