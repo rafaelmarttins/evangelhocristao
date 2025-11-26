@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check } from "lucide-react";
+import { Check, Gift } from "lucide-react";
 
 const Pricing = () => {
   return (
@@ -58,7 +58,7 @@ const Pricing = () => {
           </Card>
 
           {/* Pacote Premium */}
-          <Card className="border-2 border-warning shadow-2xl hover:shadow-3xl transition-all duration-300 relative bg-card">
+          <Card className="border-[3px] border-gold shadow-2xl hover:shadow-3xl transition-all duration-300 relative bg-card animate-neon-pulse">
             <div className="absolute -top-2 md:-top-3 left-1/2 -translate-x-1/2 z-10">
               <Badge className="bg-warning text-warning-foreground text-xs md:text-sm px-3 md:px-4 py-1 md:py-1.5 font-bold shadow-md">
                 MAIS VENDIDO
@@ -76,30 +76,31 @@ const Pricing = () => {
               </div>
             </CardHeader>
             <CardContent className="space-y-4 md:space-y-6 px-4 md:px-6 pb-4 md:pb-6">
-              <div className="bg-accent/30 p-2 md:p-3 rounded-lg mb-3 md:mb-4">
+              <div className="bg-gold-light/50 p-2 md:p-3 rounded-lg mb-3 md:mb-4 border border-gold/30">
                 <p className="font-bold text-center text-foreground text-xs md:text-sm">TUDO DO PACOTE BÁSICO +</p>
               </div>
               <div className="space-y-2 md:space-y-3">
                 {[
-                  { text: "BÔNUS 1: 2 Novos livros/mês", value: "R$ 89/ano" },
-                  { text: "BÔNUS 2: Vídeos de Histórias Bíblicas", value: "R$ 27,00" },
-                  { text: "BÔNUS 3: 15 Versículos Ilustrados", value: "R$ 19,00" },
-                  { text: "BÔNUS 4: Calendário Bíblico Semanal", value: "R$ 35,00" }
+                  { text: "BÔNUS 1: Novos Livros Mensais Durante 1 Ano", value: "R$59,90" },
+                  { text: "BÔNUS 2: Meu Primeiro Guia De Orações", value: "R$29,90" },
+                  { text: "BÔNUS 3: Cartões Bíblicos Para Memorização", value: "R$19,90" },
+                  { text: "BÔNUS 4: Desafio Bíblico De 7 Dias", value: "R$19,90" },
+                  { text: "BÔNUS 5: +100 Adesivos Cristãos", value: "R$8,90" }
                 ].map((bonus, i) => (
-                  <div key={i} className="flex items-start gap-2">
-                    <Check className="w-4 h-4 md:w-5 md:h-5 text-success flex-shrink-0 mt-0.5" />
+                  <div key={i} className="bg-gold-light/40 p-2 md:p-3 rounded-lg flex items-start gap-2 md:gap-3">
+                    <Gift className="w-5 h-5 md:w-6 md:h-6 text-gold flex-shrink-0 mt-0.5" />
                     <div className="flex-1">
-                      <p className="text-foreground text-xs md:text-sm">
-                        <strong>{bonus.text}</strong>{" "}
-                        <span className="text-muted-foreground line-through text-xs">{bonus.value}</span>
+                      <p className="text-foreground text-xs md:text-sm font-semibold">
+                        {bonus.text}
                       </p>
+                      <p className="text-destructive line-through text-xs mt-0.5">{bonus.value}</p>
                     </div>
                   </div>
                 ))}
               </div>
               <Button 
                 size="lg"
-                className="w-full animate-pulse hover:animate-none bg-warning hover:bg-warning/90 text-warning-foreground font-bold text-sm md:text-base"
+                className="w-full bg-gold hover:bg-gold-dark text-white font-bold text-sm md:text-base shadow-lg"
               >
                 QUERO O PACOTE PREMIUM
               </Button>
