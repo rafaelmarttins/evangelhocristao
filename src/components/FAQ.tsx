@@ -10,7 +10,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Como recebo os livros?",
-      answer: "Após a confirmação do pagamento, você receberá imediatamente um email com o link para download de todos os 35 livros em formato PDF. Você pode baixar quantas vezes quiser."
+      answer: "Após a confirmação do pagamento, você receberá imediatamente um email com o link para download de todos os 25 livros em formato PDF. Você pode baixar quantas vezes quiser."
     },
     {
       question: "Posso imprimir quantas vezes quiser?",
