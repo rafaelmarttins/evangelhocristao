@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";
@@ -33,6 +34,12 @@ const Testimonials = () => {
 
         <Carousel 
           opts={{ align: "start", loop: true }}
+          plugins={[
+            Autoplay({
+              delay: 3000,
+              stopOnInteraction: true,
+            }),
+          ]}
           className="w-full max-w-5xl mx-auto"
         >
           <CarouselContent>
