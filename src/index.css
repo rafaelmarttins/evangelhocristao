@@ -76,6 +76,10 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --gold: 45 100% 51%;
+    --gold-light: 48 100% 88%;
+    --gold-dark: 43 96% 36%;
   }
 
   .dark {
@@ -127,6 +131,19 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --gold: 45 100% 51%;
+    --gold-light: 48 100% 88%;
+    --gold-dark: 43 96% 36%;
+  }
+}
+
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px hsl(var(--gold)), 0 0 10px hsl(var(--gold)), 0 0 20px hsl(var(--gold)), 0 0 40px hsl(var(--gold));
+  }
+  50% {
+    box-shadow: 0 0 10px hsl(var(--gold)), 0 0 20px hsl(var(--gold)), 0 0 40px hsl(var(--gold)), 0 0 80px hsl(var(--gold));
   }
 }
 
