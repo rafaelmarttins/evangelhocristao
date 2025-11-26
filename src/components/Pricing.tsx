@@ -36,7 +36,7 @@ const Pricing = () => {
             <CardContent className="space-y-4 md:space-y-6 px-4 md:px-6 pb-4 md:pb-6">
               <div className="space-y-2 md:space-y-3">
                 {[
-                  "35 Livros de Colorir em PDF",
+                  "25 Livros de Colorir em PDF",
                   "Temas Bíblicos Variados",
                   "Acesso Vitalício",
                   "Suporte por WhatsApp",
