@@ -48,12 +48,14 @@ const Pricing = () => {
                   </div>
                 ))}
               </div>
-              <Button 
-                size="lg"
-                className="w-full animate-pulse hover:animate-none bg-success hover:bg-success/90 text-success-foreground font-bold text-sm md:text-base"
-              >
-                QUERO O PACOTE BÁSICO
-              </Button>
+              <a href="https://pay.cakto.com.br/38xaox8_664467" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button 
+                  size="lg"
+                  className="w-full animate-pulse hover:animate-none bg-success hover:bg-success/90 text-success-foreground font-bold text-sm md:text-base"
+                >
+                  QUERO O PACOTE BÁSICO
+                </Button>
+              </a>
             </CardContent>
           </Card>
 
@@ -100,12 +102,14 @@ const Pricing = () => {
                   </div>
                 ))}
               </div>
-              <Button 
-                size="lg"
-                className="w-full animate-pulse hover:animate-none bg-warning hover:bg-warning/90 text-warning-foreground font-bold text-sm md:text-base"
-              >
-                QUERO O PACOTE PREMIUM
-              </Button>
+              <a href="https://pay.cakto.com.br/t5brsxw" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button 
+                  size="lg"
+                  className="w-full animate-pulse hover:animate-none bg-warning hover:bg-warning/90 text-warning-foreground font-bold text-sm md:text-base"
+                >
+                  QUERO O PACOTE PREMIUM
+                </Button>
+              </a>
               <p className="text-center text-xs text-muted-foreground">
                 +500 pessoas já escolheram este pacote
               </p>
