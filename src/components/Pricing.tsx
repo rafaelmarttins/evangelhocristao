@@ -61,12 +61,14 @@ const Pricing = () => {
           <Card className="border-2 border-warning shadow-2xl hover:shadow-3xl transition-all duration-300 relative bg-card">
             <div className="absolute -top-2 md:-top-3 left-1/2 -translate-x-1/2 z-10">
               <Badge className="bg-warning text-warning-foreground text-xs md:text-sm px-3 md:px-4 py-1 md:py-1.5 font-bold shadow-md">
-                MAIS VENDIDO
+                🏆 MAIS VENDIDO
               </Badge>
             </div>
             <CardHeader className="text-center space-y-2 md:space-y-3 pb-4 md:pb-6 pt-4 md:pt-6 px-4 md:px-6">
               <div>
-                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2 md:mb-3">Pacote Premium</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2 md:mb-3">
+                  👑 Pacote Premium
+                </h3>
                 <div className="flex items-center justify-center gap-2 mb-1 md:mb-2">
                   <span className="text-lg md:text-2xl text-muted-foreground line-through">R$ 256,00</span>
                   <Badge className="bg-success text-success-foreground text-xs font-bold px-2 py-1">-93%</Badge>
@@ -76,8 +78,8 @@ const Pricing = () => {
               </div>
             </CardHeader>
             <CardContent className="space-y-4 md:space-y-6 px-4 md:px-6 pb-4 md:pb-6">
-              <div className="bg-accent/30 p-2 md:p-3 rounded-lg mb-3 md:mb-4">
-                <p className="font-bold text-center text-foreground text-xs md:text-sm">TUDO DO PACOTE BÁSICO +</p>
+              <div className="bg-success/10 p-2 md:p-3 rounded-lg mb-3 md:mb-4 border border-success/20">
+                <p className="font-bold text-center text-success text-xs md:text-sm">TUDO DO PACOTE BÁSICO +</p>
               </div>
               <div className="space-y-2 md:space-y-3">
                 {[
