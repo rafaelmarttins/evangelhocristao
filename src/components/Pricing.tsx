@@ -81,10 +81,11 @@ const Pricing = () => {
               </div>
               <div className="space-y-2 md:space-y-3">
                 {[
-                  { text: "BÔNUS 1: 2 Novos livros/mês", value: "R$ 89/ano" },
-                  { text: "BÔNUS 2: Vídeos de Histórias Bíblicas", value: "R$ 27,00" },
-                  { text: "BÔNUS 3: 15 Versículos Ilustrados", value: "R$ 19,00" },
-                  { text: "BÔNUS 4: Calendário Bíblico Semanal", value: "R$ 35,00" }
+                  { text: "BÔNUS 1: Novos Livros Mensais Durante 1 Ano", value: "R$ 59,90" },
+                  { text: "BÔNUS 2: Meu Primeiro Guia De Orações", value: "R$ 29,90" },
+                  { text: "BÔNUS 3: Cartões Bíblicos Para Memorização", value: "R$ 19,90" },
+                  { text: "BÔNUS 4: Desafio Bíblico De 7 Dias", value: "R$ 19,90" },
+                  { text: "BÔNUS 5: +100 Adesivos Cristãos", value: "R$ 8,90" }
                 ].map((bonus, i) => (
                   <div key={i} className="flex items-start gap-2">
                     <Check className="w-4 h-4 md:w-5 md:h-5 text-success flex-shrink-0 mt-0.5" />
