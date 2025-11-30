@@ -39,7 +39,7 @@ const Pricing = () => {
                   </div>)}
               </div>
               <a href="https://pay.cakto.com.br/38xaox8_664467" target="_blank" rel="noopener noreferrer" className="w-full">
-                <Button size="lg" className="w-full animate-pulse hover:animate-none bg-success hover:bg-success/90 text-success-foreground font-bold text-sm md:text-base">
+                <Button size="lg" className="w-full animate-pulse hover:animate-none bg-success hover:bg-success/90 text-success-foreground font-bold text-sm md:text-base my-[10px]">
                   QUERO O PACOTE BÁSICO
                 </Button>
               </a>
